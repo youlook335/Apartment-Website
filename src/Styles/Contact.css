@@ -1,0 +1,125 @@
+
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 30px;
+    background-color: #f8f3ec;
+    flex-wrap: wrap;
+}
+
+.contact-agent {
+    width: 35%;
+    margin-top: 90px;
+    text-align: start;
+}
+
+.agent-name {
+    font-size: clamp(18px, 2vw, 22px);
+}
+
+.contact-agent .agent-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.contact-agent .agent-name,
+.contact-agent .agent-subtitle,
+.contact-agent .contact-info {
+    margin: 10px 0;
+}
+
+.contact-agent .contact-info span {
+    font-weight: bold;
+    color: #d8af72;
+}
+
+.contact-form-container {
+    width: 60%;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.form-title {
+    font-weight: bold;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.form-input,
+.form-input1 {
+    padding: 10px;
+    font-size: clamp(14px, 1.8vw, 16px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.form-input1:focus {
+    outline: none;
+    border: 2px solid;
+    border-color: #d8af72;
+}
+.form-input:focus {
+    outline: none;
+    border: 2px solid;
+    border-color: #d8af72;
+}
+.form-textarea:focus {
+    outline: none;
+    border: 2px solid;
+    border-color: #d8af72;
+}
+.form-textarea {
+    padding: 12px;
+    font-size: clamp(14px, 1.8vw, 16px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    transition: all 0.3s ease;
+    resize: none;
+}
+.submit-button {
+    background-color: #d8af72;
+    color: white;
+    padding: 12px 0px;
+    font-size: clamp(16px, 1.8vw, 18px);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #c59b60;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-agent,
+    .contact-form-container {
+        width: 100%;
+    }
+    .form-title {
+        font-size: 22px;
+    }
+}

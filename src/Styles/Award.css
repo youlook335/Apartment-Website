@@ -1,0 +1,78 @@
+.award {
+    justify-content: center;
+    background: #ffe7c2;
+    padding: 50px;
+}
+.award h1 {
+    font-size: 50px;
+}
+.First,
+.Second,
+.Third,
+.Fourth,
+.Fifth {
+    text-align: center;
+    padding: 20px;
+}
+.Award-pics {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Award-pics img {
+    padding: 10px;
+}
+.Award-pics p {
+    padding: 20px;
+    font-size: 18px;
+}
+@media screen and (max-width: 1024px) {
+    .award {
+        padding: 30px;
+    }
+    .Award-pics p {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .award {
+        padding: 50px;
+    }
+    .First,
+    .Second,
+    .Third,
+    .Fourth,
+    .Fifth p {
+        padding: 10px;
+    }
+    .Award-pics {
+        padding: 10px;
+    }
+    .First,
+    .Second,
+    .Third,
+    .Fourth,
+    .Fifth p {
+        padding: 10px;
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .award h1 {
+        font-size: 35px;
+    }
+    .First,
+    .Second,
+    .Third,
+    .Fourth,
+    .Fifth p {
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

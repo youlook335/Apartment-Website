@@ -1,0 +1,126 @@
+.faqcontain {
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    padding: 8vw;
+}
+
+.faqcontain h1 {
+    font-size: clamp(30px, 5vw, 50px);
+    text-align: center;
+}
+
+.faq-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    margin-top: 5vw;
+    width: 70%;
+}
+
+.accordion-item {
+    background-color: #f8f3ec;
+    color: black;
+    margin: 3vw 0;
+    border: 1px solid black;
+    padding: 2.5vw;
+    transition: all 0.3s ease;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: clamp(18px, 3vw, 24px);
+    cursor: pointer;
+}
+
+.accordion-icon {
+    margin-left: 1vw;
+    font-size: clamp(18px, 3vw, 24px);
+}
+
+.accordion-content {
+    margin-top: 1vw;
+    font-size: clamp(14px, 2vw, 20px);
+    color: #333;
+    padding: 1vw 0;
+    line-height: 1.4;
+    overflow: hidden;
+}
+
+.faqbottom {
+    padding: 5vw;
+    text-align: center;
+}
+
+.faqbottom h1 {
+    font-size: clamp(30px, 5vw, 50px);
+}
+
+.faqbottom-link {
+    display: flex;
+    margin: 3vw 0;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .faqcontain {
+        padding: 6vw;
+    }
+    .faq-columns {
+        width: 90%;
+    }
+    .accordion-item {
+        padding: 3vw;
+    }
+    .faqbottom h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .faqcontain {
+        padding: 4vw;
+    }
+    .faqcontain h1 {
+        font-size: 25px;
+    }
+    .faqbottom {
+        padding: 4vw;
+    }
+    .faqbottom h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faqcontain {
+        padding: 3vw;
+    }
+    .faqcontain h1 {
+        font-size: 22px;
+    }
+    .faq-columns {
+        width: 80%;
+        margin-top: 40px;
+    }
+    .accordion-title {
+        font-size: 16px;
+    }
+    .accordion-icon {
+        font-size: 18px;
+    }
+    .accordion-content {
+        font-size: 14px;
+    }
+    .faqbottom {
+        padding: 3vw;
+    }
+    .faqbottom h1 {
+        font-size: 20px;
+    }
+    .faqbottom-link {
+        margin: 2vw 0;
+    }
+}
